@@ -128,7 +128,7 @@ pre {
 
 .brand-main a {
     text-decoration: none;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
     font-size: 25px;
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.3);
