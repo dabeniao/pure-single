@@ -26,7 +26,7 @@
                     <section class="post">
                         <header class="post-header">
                             <h3><a class="post-title" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-                            <p class="post-meta">{{ article.summary }}</p>
+                            <div class="post-meta?">{{ article.summary }}</div>
                         {% if HIDE_CATEGORIES %}
                             <p class="post-meta">// under {% for tag in article.tags %}
                                 <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>

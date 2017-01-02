@@ -26,8 +26,8 @@
     <link href="{{ FAVICON_URL }}" rel="icon">
     {% endif %}
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.1/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
     {% block head_css %}{% endblock %}
@@ -42,7 +42,7 @@
             <div class="cover-img" style="background-image: url('{% block sidebar %}{{ COVER_IMG_URL }}{% endblock %}')">
                 <div class="cover-body">
                     <header class="header">
-                        <hgroup>
+                        <div>
                             {% if PROFILE_IMG_URL %}
                             <a href="{{ SITEURL }}"><img class="avatar" src="{{ PROFILE_IMG_URL }}"><a>
                             {% endif %}
@@ -58,7 +58,7 @@
                                     </a>
                             {% endfor %}
                                 </p>
-                        </hgroup>
+                        </div>
                     </header>
                 </div>
             </div>
