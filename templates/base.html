@@ -26,13 +26,14 @@
     <link href="{{ FAVICON_URL }}" rel="icon">
     {% endif %}
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.1/pure-min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
     {% block head_css %}{% endblock %}
 
+    <!--
+    <script async src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script async src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    -->
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     {% block head_js %}{% endblock %}
 </head>
 
@@ -66,7 +67,9 @@
         {% block content %}
         {% endblock %}
     </div>
-    <script>
+    <script defer src="{{ SITE_URL }}/theme/js/go-top.js"></script>
+    <!--
+    <script defer>
         var $top = $('.go-top');
 
         // Show or hide the sticky footer button
@@ -90,6 +93,13 @@
             event.preventDefault();
         });
     </script>
+    -->
     {% include 'analytics.html' %}
+    <!--
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
 </body>
 </html>

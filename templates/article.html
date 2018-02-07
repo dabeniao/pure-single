@@ -4,12 +4,15 @@
 
 
 {% block head_js %}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
-    <script>
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+    <script defer src="{{ SITE_URL }}/theme/js/fitvids.js"></script>
+    <!--
+    <script defer>
         $(document).ready(function(){
             $(".content").fitVids();
         });
     </script>
+    -->
     {% if article and article.latex %}
         {{ article.latex }}
     {% endif %}
